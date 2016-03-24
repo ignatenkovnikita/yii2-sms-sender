@@ -1,0 +1,21 @@
+{
+    "name": "ignatenkovnikita/yii2-sms-sender",
+    "description": "Client for service sms sender",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","sms","sender"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Ignatenkov Nikita",
+            "email": "ignatenkov.n@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ignatenkovnikita\\smssender\\": ""
+        }
+    }
+}
