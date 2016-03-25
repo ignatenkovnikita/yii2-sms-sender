@@ -14,15 +14,19 @@ use yii\base\Component;
 
 class ClientSmsSender extends Component
 {
-    protected $client = false;
+    /** @var  \SoapClient $_client */
+    private $_client;
+    /** @var array $credentials */
     public $credentials;
+    /** @var  string $gate */
     public $gate;
+    /** @var  string */
     public $sender;
 
     public function init()
     {
         parent::init();
-        $this->client = new \SoapClient($this->gate, ["trace" => 1, "exceptions" => 0]);
+        $this->_client = new \SoapClient($this->gate, ["trace" => 1, "exceptions" => 0]);
     }
 
 
@@ -35,7 +39,7 @@ class ClientSmsSender extends Component
             'message' => $message,
         ];
 
-        $result = $this->client->sendOutboundMessage($params);
+        $result = $this->_client->sendOutboundMessage($params);
         return $result->return;
     }
 
@@ -43,11 +47,11 @@ class ClientSmsSender extends Component
     public function state($messageId){
         $params = [
             'generator' => $this->credentials,
-            'messageId'     => $messageId,
+            'MessageID'     => $messageId,
 
         ];
 
-        $result = $this->client->getDeliveryState($params);
+        $result = $this->_client->getDeliveryState($params);
         return $result;
     }
 
