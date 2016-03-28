@@ -2,6 +2,8 @@ Client for service sms sender
 =============================
 Client for service sms sender
 
+[![Latest Stable Version](https://poser.pugx.org/ignatenkovnikita/yii2-sms-sender/v/stable)](https://packagist.org/packages/ignatenkovnikita/yii2-sms-sender) [![Total Downloads](https://poser.pugx.org/ignatenkovnikita/yii2-sms-sender/downloads)](https://packagist.org/packages/ignatenkovnikita/yii2-sms-sender) [![Latest Unstable Version](https://poser.pugx.org/ignatenkovnikita/yii2-sms-sender/v/unstable)](https://packagist.org/packages/ignatenkovnikita/yii2-sms-sender) [![License](https://poser.pugx.org/ignatenkovnikita/yii2-sms-sender/license)](https://packagist.org/packages/ignatenkovnikita/yii2-sms-sender)
+
 Installation
 ------------
 
