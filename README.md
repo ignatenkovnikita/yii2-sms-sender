@@ -44,6 +44,6 @@ Add this to your main configuration's components array:
 Typical component usage
 -----------------------
 ```php
-Yii::$app->refillMobile->send(7 your_phone, your_message_text);
-Yii::$app->refillMobile->state(your_message_id_response);
+Yii::$app->smsSender->send(7 your_phone, your_message_text);
+Yii::$app->smsSender->state(your_message_id_response);
 ```
